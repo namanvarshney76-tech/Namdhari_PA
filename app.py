@@ -202,7 +202,7 @@ class NamdhariPaymentAdviceProcessor:
                 flow = Flow.from_client_config(
                     client_config=creds_data,
                     scopes=combined_scopes,
-                    redirect_uri=st.secrets.get("redirect_uri", st.secrets.get("REDIRECT_URI", "https://namdhari-payment-processor.streamlit.app/"))
+                    redirect_uri=st.secrets.get("redirect_uri", st.secrets.get("REDIRECT_URI", "https://namdharipa.streamlit.app/"))
                 )
                 
                 # Generate authorization URL
